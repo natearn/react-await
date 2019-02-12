@@ -1,0 +1,22 @@
+{
+  "name": "react-promise-component",
+  "version": "1.0.0",
+  "description": "components that handle promises",
+  "main": "index.js",
+  "scripts": {
+    "start": "styleguidist server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Arnold (natearn@natearn.info)",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-styleguidist": "^8.0.6",
+    "webpack": "^4.29.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5"
+  }
+}
