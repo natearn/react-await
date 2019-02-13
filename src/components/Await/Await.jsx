@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class PromiseComponent extends Component {
+export class Await extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { resolved: null };

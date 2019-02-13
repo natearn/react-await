@@ -1,7 +1,7 @@
 {
-  "name": "react-promise-component",
+  "name": "react-await",
   "version": "1.0.0",
-  "description": "components that handle promises",
+  "description": "render with promises",
   "main": "index.js",
   "scripts": {
     "start": "styleguidist server",

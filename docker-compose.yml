@@ -2,7 +2,7 @@ version: "3"
 services:
 
   docs:
-    image: react-promise-component
+    image: react-await
     build: .
     volumes:
       - ./src:/app/src:ro
