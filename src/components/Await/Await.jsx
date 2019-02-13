@@ -7,7 +7,7 @@ const Await = ({pending, children}) => {
 		children.then(resolve)
 	}, [children]);
 
-	return result || pending;
+	return result || pending();
 };
 
 export default Await;
