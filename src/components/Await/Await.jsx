@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export class Await extends Component {
-	constructor(props) {
-		super(props);
-		this.state = { resolved: null };
-	}
+const Await = ({pending, children}) => {
+	const [result,resolve] = useState(null);
 
-	componentDidMount() {
-		const promise = this.props.children;
-		promise.then(resolved => this.setState({ resolved }));
-	}
+	useEffect(() => {
+		children.then(resolve)
+	}, [children]);
 
-	render() {
-		const Pending = this.props.pending;
-		return this.state.resolved || <Pending />;
-	}
-}
+	return result || pending;
+};
+
+export default Await;

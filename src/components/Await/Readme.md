@@ -2,7 +2,7 @@
 example:
 
 ```js
-	<Await pending={() => <p>loading...</p>}>
+	<Await pending={<p>loading...</p>}>
 		{new Promise((resolve,reject) => {
 			setTimeout(
 				() => resolve(<p>loaded!</p>),
