@@ -10,6 +10,6 @@ jobs:
       docker_layer_caching: true
     steps:
       - checkout
-      - run: docker build -t react-await:$CIRCLE_BRANCH .
-      - run: docker run react-await:$CIRCLE_BRANCH yarn lint
-      - run: docker run react-await:$CIRCLE_BRANCH yarn test
+      - run: docker build -t react-await .
+      - run: docker run react-await yarn lint
+      - run: docker run react-await yarn test
