@@ -5,19 +5,24 @@
   "main": "index.js",
   "scripts": {
     "start": "styleguidist server",
-    "lint": "echo \"Error: no test specified\" && exit 0",
+    "lint":  "eslint --ext .js,.jsx src/",
+    "prettier": "prettier --write src/**/*.{js,jsx}",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "author": "Nathan Arnold (natearn@natearn.info)",
   "license": "ISC",
   "devDependencies": {
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-styleguidist": "^8.0.6",
-    "webpack": "^4.29.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5"
+    "babel-loader": "^8.0.5",
+    "eslint": "^6.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "prettier": "^1.18.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-styleguidist": "^8.0.6",
+    "webpack": "^4.29.3"
   }
 }

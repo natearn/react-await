@@ -5,4 +5,6 @@ services:
     image: react-await
     build: .
     volumes:
-      - ./src:/app/src:ro
+      - ./src:/app/src
+    ports:
+      - "6060:6060"
