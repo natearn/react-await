@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "styleguidist server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "echo \"Error: no test specified\" && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "author": "Nathan Arnold (natearn@natearn.info)",
   "license": "ISC",
