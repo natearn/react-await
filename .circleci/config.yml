@@ -6,10 +6,12 @@
 version: 2
 jobs:
   build:
-    machine:
-      docker_layer_caching: true
+    docker:
+      - image: buildpack-deps:trusty
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
       - run: docker build -t react-await .
       - run: docker run react-await yarn lint
       - run: docker run react-await yarn test
