@@ -6,13 +6,10 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: golang:1.6.4-jessie
+    machine:
+      docker_layer_caching: true
     steps:
       - checkout
-      - setup_remote_docker:
-          docker_layer_caching: true
-
       - run: docker build -t react-await .
       - run: docker run react-await yarn lint
       - run: docker run react-await yarn test
